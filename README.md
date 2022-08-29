@@ -1,6 +1,12 @@
 # Cypress
 To learn and study cypress
 
+## To read more
+
+(Oficial documentation)[https://docs.cypress.io/]
+
+(Website to practice)[example.cypress.io/commands/actions]
+
 ## Setting Environment
 
 Npm –version 8.1.2 
