@@ -7,6 +7,12 @@ To learn and study cypress
 
 (Website to practice)[example.cypress.io/commands/actions]
 
+(Other website to practice)[https://rahulshettyacademy.com/AutomationPractice/]
+
+(Website to practice focus on selenium)[https://rahulshettyacademy.com/seleniumPractise/#/]
+
+(Website to practice focus on Angular)[https://rahulshettyacademy.com/angularpractice/shop]
+
 ## Setting Environment
 
 Npm –version 8.1.2 
