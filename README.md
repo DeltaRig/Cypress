@@ -63,7 +63,7 @@ DefaultCommandTimeout is 4 seconds, but you can add more time using:
 > cy.wait(2000)
 
 ### Identify elements on the page 
-Cypress identify the element as CSS 
+Cypress supports CSS selectors only
 
 | ID         | #idName                     | Note                                                                  |
 |------------|-----------------------------|-----------------------------------------------------------------------|
@@ -84,3 +84,46 @@ And when you want count how much itens is expected:
 To filter the visible locator:
 
 > cy.get('locator:visible') 
+
+We can see what happenend on every step with screenshot and error messages in cypress
+
+-- 
+Cypress is asynchronus in nature and there is no guarantee in sequence of execution, but cypress takes care of it. They have redundant wrappers, that makes synchronus behavior.
+
+Promise comes with rejection, resolved and pending.
+
+> .then()
+
+Is used to wait to the status is completed to continue. For examples:
+
+```
+cy.get('@something').find('product').eq(2).contains('ADD TO CART').click().then(function()
+{
+    console.log('clicked')
+})
+```
+
+-- 
+To print something:
+
+> cy.log("print")
+
+And to convert to text:
+
+> const text = find('h4.element').text()
+
+-- 
+
+#### Alliasing to reuse locators
+You can get elements with alias and call it by the alias:
+
+> cy.get('.product').as('productsalias')
+> cy.get('@productsalias')...
+
+This is good to when something change the name you just need change in one place and don't need declare again and again.
+
+--
+
+#### asserts
+
+> cy.get('.brand').should(have.text, 'GREENKART')
