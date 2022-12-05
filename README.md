@@ -1,15 +1,17 @@
 # Cypress
 To learn and study cypress
 
+We can see what happenend on every step with screenshot and error messages in cypress
+
 ## To read more
 
 [Oficial documentation](https://docs.cypress.io/)
 
 [Website to practice](example.cypress.io/commands/actions)
 
-[Other website to practice](https://rahulshettyacademy.com/AutomationPractice/)
+[Website with checkbox and other elements to interect](https://rahulshettyacademy.com/AutomationPractice/)
 
-[Website to practice focus on selenium](https://rahulshettyacademy.com/seleniumPractise/#/)
+[Shop website to practice focus on selenium](https://rahulshettyacademy.com/seleniumPractise/#/)
 
 [Website to practice focus on Angular](https://rahulshettyacademy.com/angularpractice/shop)
 
@@ -85,9 +87,9 @@ To filter the visible locator:
 
 > cy.get('locator:visible') 
 
-We can see what happenend on every step with screenshot and error messages in cypress
 
--- 
+### Cypress Commands and its ASynchronous Nature
+
 Cypress is asynchronus in nature and there is no guarantee in sequence of execution, but cypress takes care of it. They have redundant wrappers, that makes synchronus behavior.
 
 Promise comes with rejection, resolved and pending.
@@ -114,7 +116,7 @@ And to convert to text:
 
 -- 
 
-#### Alliasing to reuse locators
+### Alliasing to reuse locators
 You can get elements with alias and call it by the alias:
 
 > cy.get('.product').as('productsalias')
@@ -122,8 +124,14 @@ You can get elements with alias and call it by the alias:
 
 This is good to when something change the name you just need change in one place and don't need declare again and again.
 
---
+### Handling Web Controls UI
 
-#### asserts
+in this path \cypress\e2e\examples\06webControlsUI.cy.js
+
+### Alerts, popups, child windowns using Cypress-Jquery
+
+in this path \cypress\e2e\examples\07alerts.js
+
+### Asserts
 
 > cy.get('.brand').should(have.text, 'GREENKART')
