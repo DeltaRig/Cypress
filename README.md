@@ -19,13 +19,13 @@ We can see what happenend on every step with screenshot and error messages in cy
 
 Npm –version 8.1.2 
 
-Project folder 
+This will generate some files and folders 
 
 > npm –i init 
 
 > npm install cypress –save-dev  
 
-This will generate some files and folders 
+This will open the cy app
 
 > node_modules/.bin/cypress open 
 
