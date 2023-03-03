@@ -135,3 +135,11 @@ in this path \cypress\e2e\examples\07alerts.js
 ### Asserts
 
 > cy.get('.brand').should(have.text, 'GREENKART')
+
+### Fixures
+
+Used to drive the data from Fixtures folder.
+
+### Reuseble commands
+
+Create your custom commands inside support/command.js
